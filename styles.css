@@ -1,0 +1,94 @@
+/* Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+/* setting to 0 */
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Inter', sans-serif;
+}
+
+/* setting the variables */
+:root{
+    --primaryOrange: hsl(35, 77%, 62%);
+    --primaryRed: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --grayBlue: hsl(233, 8%, 79%);
+    --dark-grayBlue: hsl(236, 13%, 42%);
+    --darker-grayBlue: hsl(240, 100%, 5%);
+}
+
+
+body {
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* content wrapper */
+.container {
+    width:85%;
+    height:85vh;
+    overflow: hidden;
+}
+
+/* header setting */
+header {
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    flex-direction: row;
+    height:7vh ;
+    width:100%;
+    margin-bottom: 2rem;
+}
+nav a {
+    text-decoration: none;
+    color: var(--dark-grayBlue);
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    transition:all 0.3s;
+    display: inline-block;
+}
+nav a:hover{
+    color:var(--darker-grayBlue);
+    transform: scale(1.1);
+}
+
+/* main content settings */
+main {
+    height: calc(78vh - 2rem);
+    width:100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows:75% 25%  ;
+}
+
+/* main article */
+.main-article {
+    background-color: lightcoral;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#image {
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+.imageContainer {
+    width:100%;
+    height: 65%;
+    overflow: hidden;
+}
+.new {
+    background-color: lightgray;
+    grid-column:2 / 3 ;
+    grid-row: 1 / 2;
+}
+.down {
+    grid-column: 1 / -1;
+    background-color: lightpink;
+}
