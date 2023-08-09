@@ -91,3 +91,14 @@ main {
     grid-column: 1 / -1;
     background-color: lightpink;
 }
+
+/* main text */
+.text{
+    display:flex ;
+    flex-direction: row;
+}
+.text h1{
+    color:var(--darker-grayBlue);
+    font-size:2rem ;
+    width:20%;
+}
