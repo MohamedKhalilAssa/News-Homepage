@@ -210,13 +210,24 @@ hr{
         main{
             min-height: 200vh;
             grid-template-columns: 100%;
-            grid-template-rows:1fr 3fr 1fr   ;
+            grid-template-rows:1fr 1.7fr 1fr   ;
             column-gap: 2rem;
             row-gap: 1rem;
         }
         .new {
             grid-row: 2 / 3;
             grid-column: 1/-1;
+            height:100%;
+        }
+        .article-link{
+            font-size: 2.4rem;
+        }
+        .article-desc{
+            font-size: 1.4rem;
+            line-height: 2.8rem;
+        }
+        .articles{
+            margin-top: 7rem;
         }
         .down{
             grid-row:3/-1;
@@ -230,6 +241,28 @@ hr{
         }
         .wrapper h1 {
             margin-top:5rem;
+        }
+        .down-content{
+            flex-direction: column;
+        }
+        .downElement{
+            width:100%;
+        }
+        .img-container{
+            overflow:hidden;
+            width:40%;
+        }
+        .textElement{
+            width:60%;
+        }
+        .number{
+            font-size: 3rem;
+        }
+        .title{
+            font-size: 2.2rem;
+        }
+        .downDesc{
+            font-size: 1.2rem;
         }
 }
 @media screen and (min-width:600px) and (max-width:959px){
